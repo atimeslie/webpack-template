@@ -1,0 +1,2738 @@
+[
+  {
+    "index": 0,
+    "name": "公共分类",
+    "desc": "public",
+    "add_time": 1548159671,
+    "up_time": 1554277722,
+    "list": [
+      {
+        "query_path": {
+          "path": "/public/machineMarkAfterId",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1961,
+        "method": "GET",
+        "catid": 342,
+        "title": "入库时通知机器学习大于该id的数据",
+        "path": "/public/machineMarkAfterId",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6fb255bb6bbd1a8f3b6527",
+            "name": "id",
+            "desc": ""
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1550823982,
+        "up_time": 1551097728,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/public/machineMarkWhenStorage",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1954,
+        "method": "GET",
+        "catid": 342,
+        "title": "入库时通知机器学习该id",
+        "path": "/public/machineMarkWhenStorage",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1550819351,
+        "up_time": 1551097729,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6fa0202472951a945c7745",
+            "name": "id",
+            "desc": ""
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}"
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "机器学习外部接口",
+    "desc": " machineLearnExt",
+    "add_time": 1548159739,
+    "up_time": 1554791226,
+    "list": [
+      {
+        "query_path": {
+          "path": "/uploadTest",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1184,
+        "method": "POST",
+        "catid": 346,
+        "title": "提交测试集接口",
+        "path": "/uploadTest",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1548390150,
+        "up_time": 1551097800,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c6a14fdef0dcf509e2c8496",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "__v": 0,
+        "markdown": "请求示例：\n[\n  {\n    \"id\": 56.48648345109056,\n    \"content\": \"华为更新9.0后搜狗输入法斗图变回老版本，使用不方便，找不到进入新版斗图的办法\",\n    \"target\": \"安卓输入法\"\n  },\n  {\n    \"id\": 41.27297544598747,\n    \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",\n    \"target\": \"IOS输入法\"\n  },\n  {\n    \"id\": 76.87840479042886,\n    \"content\": \"华为更新9.0后搜狗输入法斗图变回老版本，使用不方便，找不到进入新版斗图的办法\",\n    \"target\": \"安卓输入法\"\n  },\n  {\n    \"id\": 14.927572018546682,\n    \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",\n    \"target\": \"IOS输入法\"\n  },\n  {\n    \"id\": 10.119451763424493,\n    \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",\n    \"target\": \"安卓输入法\"\n  }\n]",
+        "desc": "<p>请求示例：<br>\n[<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 56.48648345109056,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"华为更新9.0后搜狗输入法斗图变回老版本，使用不方便，找不到进入新版斗图的办法\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"安卓输入法\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 41.27297544598747,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"IOS输入法\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 76.87840479042886,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"华为更新9.0后搜狗输入法斗图变回老版本，使用不方便，找不到进入新版斗图的办法\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"安卓输入法\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 14.927572018546682,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"IOS输入法\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 10.119451763424493,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"安卓输入法\"<br>\n&nbsp; }<br>\n]</p>\n",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"唯一ID\"},\"content\":{\"type\":\"string\",\"description\":\"正文\"},\"target\":{\"type\":\"string\",\"description\":\"产品\"},\"moduleName\":{\"type\":\"string\",\"description\":\"模块\"},\"problemName\":{\"type\":\"string\",\"description\":\"现象\"},\"childProblemName\":{\"type\":\"string\",\"description\":\"子现象\"},\"bigClassify\":{\"type\":\"string\",\"description\":\"大分类\"}},\"required\":[\"id\",\"content\",\"target\",\"moduleName\",\"problemName\",\"childProblemName\",\"bigClassify\"]}}",
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"exclusiveMinimum\":true,\"exclusiveMaximum\":true,\"minimum\":1,\"maximum\":100,\"description\":\"唯一ID\"},\"content\":{\"type\":\"string\",\"enum\":[\"九宫格输入法如何去掉最右端搜索，换回以前的左右光标按键，搜索建很让人反感的。\",\"华为更新9.0后搜狗输入法斗图变回老版本，使用不方便，找不到进入新版斗图的办法\"],\"description\":\"正文\"},\"target\":{\"type\":\"string\",\"enum\":[\"安卓输入法\",\"IOS输入法\"],\"description\":\"产品\"}},\"required\":[\"id\",\"content\",\"target\"]}}"
+      },
+      {
+        "query_path": {
+          "path": "/uploadSamples",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1946,
+        "method": "POST",
+        "catid": 346,
+        "title": "提交训练集接口",
+        "path": "/uploadSamples",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1550454534,
+        "up_time": 1551097801,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c6a14f0ef0dcf509e2c8495",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "请求示例：\n[\n\n{\n    \"id\": 4591185071237220,\n    \"content\": \"打字后有表情包出来，很影响体验\",\n    \"target\": \"安卓输入法\",\n    \"moduleName\": \"皮肤\",\n    \"problemName\": \"不会使用泛灵犀迷你卡功能\",\n    \"childProblemName\": \"ddTLD\",\n    \"bigClassify\": \"好评\"\n  },\n  {\n    \"id\": -3785515532039524,\n    \"content\": \"语音输入有问题？为什么我说这个经常出来那个？呵呵~\",\n    \"target\": \"IOS输入法\",\n    \"moduleName\": \"键盘\",\n    \"problemName\": \"语音识别不准\",\n    \"childProblemName\": \"6St\",\n    \"bigClassify\": \"好评\"\n  },\n  {\n    \"id\": 8610344191644396,\n    \"content\": \"打字后有表情包出来，很影响体验\",\n    \"target\": \"安卓输入法\",\n    \"moduleName\": \"性能\",\n    \"problemName\": \"不希望自动更新\",\n    \"childProblemName\": \"y[D\",\n    \"bigClassify\": \"差评\"\n  }\n]",
+        "desc": "<p>请求示例：<br>\n[</p>\n<p>{<br>\n&nbsp;&nbsp;&nbsp; \"id\": 4591185071237220,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"打字后有表情包出来，很影响体验\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"安卓输入法\",<br>\n&nbsp;&nbsp;&nbsp; \"moduleName\": \"皮肤\",<br>\n&nbsp;&nbsp;&nbsp; \"problemName\": \"不会使用泛灵犀迷你卡功能\",<br>\n&nbsp;&nbsp;&nbsp; \"childProblemName\": \"ddTLD\",<br>\n&nbsp;&nbsp;&nbsp; \"bigClassify\": \"好评\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": -3785515532039524,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"语音输入有问题？为什么我说这个经常出来那个？呵呵~\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"IOS输入法\",<br>\n&nbsp;&nbsp;&nbsp; \"moduleName\": \"键盘\",<br>\n&nbsp;&nbsp;&nbsp; \"problemName\": \"语音识别不准\",<br>\n&nbsp;&nbsp;&nbsp; \"childProblemName\": \"6St\",<br>\n&nbsp;&nbsp;&nbsp; \"bigClassify\": \"好评\"<br>\n&nbsp; },<br>\n&nbsp; {<br>\n&nbsp;&nbsp;&nbsp; \"id\": 8610344191644396,<br>\n&nbsp;&nbsp;&nbsp; \"content\": \"打字后有表情包出来，很影响体验\",<br>\n&nbsp;&nbsp;&nbsp; \"target\": \"安卓输入法\",<br>\n&nbsp;&nbsp;&nbsp; \"moduleName\": \"性能\",<br>\n&nbsp;&nbsp;&nbsp; \"problemName\": \"不希望自动更新\",<br>\n&nbsp;&nbsp;&nbsp; \"childProblemName\": \"y[D\",<br>\n&nbsp;&nbsp;&nbsp; \"bigClassify\": \"差评\"<br>\n&nbsp; }<br>\n]</p>\n",
+        "res_body": "",
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"integer\",\"mock\":{\"mock\":\"@integer\"},\"description\":\"唯一ID\",\"minimum\":1,\"maximum\":1000,\"exclusiveMinimum\":true,\"exclusiveMaximum\":true},\"content\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"正文\",\"enum\":[\"打字后有表情包出来，很影响体验\",\"语音输入有问题？为什么我说这个经常出来那个？呵呵~\"]},\"target\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"产品\",\"enum\":[\"安卓输入法\",\"IOS输入法\"]},\"moduleName\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"模块\",\"enum\":[\"键盘\",\"皮肤\",\"广告\",\"性能\",\"词库\"]},\"problemName\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"现象\",\"enum\":[\"语音识别不准\",\"无法使用按键音\",\"不会使用泛灵犀迷你卡功能\",\"不希望自动更新\"]},\"childProblemName\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"子现象\"},\"bigClassify\":{\"type\":\"string\",\"mock\":{\"mock\":\"@string\"},\"description\":\"大分类\",\"enum\":[\"问题\",\"建议\",\"好评\",\"差评\"]}},\"required\":[\"id\",\"content\",\"target\",\"moduleName\",\"problemName\",\"childProblemName\",\"bigClassify\"]},\"minItems\":3}"
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "数据处理页面接口",
+    "desc": "dataHandle",
+    "add_time": 1548297181,
+    "up_time": 1554791144,
+    "list": [
+      {
+        "query_path": {
+          "path": "/config/snatchData/personMark",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "测试"
+        ],
+        "_id": 1149,
+        "method": "POST",
+        "catid": 350,
+        "title": "人工批量标注",
+        "path": "/config/snatchData/personMark",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548314662,
+        "up_time": 1551059449,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c7349f92472951a945c774d",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c7349f92472951a945c774c",
+            "name": "target",
+            "example": "安卓输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "1",
+            "_id": "5c7349f92472951a945c774b",
+            "name": "moduleName",
+            "example": "",
+            "desc": "模块名"
+          },
+          {
+            "required": "1",
+            "_id": "5c7349f92472951a945c774a",
+            "name": "problemName",
+            "example": "",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c7349f92472951a945c7749",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          },
+          {
+            "required": "1",
+            "_id": "5c7349f92472951a945c7748",
+            "name": "childModuleName",
+            "example": "",
+            "desc": "子现象"
+          },
+          {
+            "required": "0",
+            "_id": "5c7349f92472951a945c7747",
+            "name": "decisionCriteria",
+            "example": "",
+            "desc": "判定准则"
+          },
+          {
+            "required": "0",
+            "_id": "5c7349f92472951a945c7746",
+            "name": "remarks",
+            "example": "",
+            "desc": "备注"
+          }
+        ],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"id\"},\"target\":{\"type\":\"string\",\"description\":\"产品\"},\"moduleName\":{\"type\":\"string\",\"description\":\"模块名\"},\"problemName\":{\"type\":\"string\",\"description\":\"现象名\"},\"bigClassify\":{\"type\":\"string\",\"description\":\"大分类\"},\"childModuleName\":{\"type\":\"string\",\"description\":\"子现象名\"},\"decisionCriteria\":{\"type\":\"string\",\"description\":\"判定准则\"},\"remarks\":{\"type\":\"string\",\"description\":\"备注\"}},\"required\":[\"id\",\"target\",\"moduleName\",\"problemName\",\"bigClassify\"]}",
+        "req_body_type": "json"
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/cloneData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1172,
+        "method": "GET",
+        "catid": 350,
+        "title": "克隆数据",
+        "path": "/config/snatchData/cloneData",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548317697,
+        "up_time": 1551060925,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c734fbd2472951a945c7752",
+            "name": "target",
+            "desc": "产品名"
+          },
+          {
+            "required": "1",
+            "_id": "5c734fbd2472951a945c7751",
+            "name": "src",
+            "example": "",
+            "desc": "来源"
+          },
+          {
+            "required": "1",
+            "_id": "5c734fbd2472951a945c7750",
+            "name": "id",
+            "example": "",
+            "desc": "id"
+          }
+        ],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/deleteData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1178,
+        "method": "GET",
+        "catid": 350,
+        "title": "删除数据",
+        "path": "/config/snatchData/deleteData",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548317940,
+        "up_time": 1551060946,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c734fd2bb6bbd1a8f3b654b",
+            "name": "target",
+            "desc": "产品名"
+          },
+          {
+            "required": "1",
+            "_id": "5c734fd2bb6bbd1a8f3b654a",
+            "name": "src",
+            "example": "",
+            "desc": "来源"
+          },
+          {
+            "required": "1",
+            "_id": "5c734fd2bb6bbd1a8f3b6549",
+            "name": "id",
+            "example": "",
+            "desc": "id"
+          }
+        ],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/updateList",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1166,
+        "method": "POST",
+        "catid": 350,
+        "title": "批量修改",
+        "path": "/config/snatchData/updateList",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548316971,
+        "up_time": 1551060859,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c734f7bbb6bbd1a8f3b6545",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "__v": 0,
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"target\":{\"type\":\"string\",\"description\":\"产品名\"},\"src\":{\"type\":\"string\",\"description\":\"来源\"},\"moduleName\":{\"type\":\"string\",\"description\":\"模块名\"},\"problemName\":{\"type\":\"string\",\"description\":\"现象名\"},\"id\":{\"type\":\"string\",\"description\":\"id\"},\"childPorblemName\":{\"type\":\"string\",\"description\":\"子现象名\"},\"filterByPerson\":{\"type\":\"number\",\"description\":\"人工过滤\"},\"isCannotModule\":{\"type\":\"number\",\"description\":\"无法判断\"}},\"description\":\"snatchData\",\"required\":[\"target\",\"src\",\"id\"]}",
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "req_body_type": "json"
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/pushMachine",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1161,
+        "method": "POST",
+        "catid": 350,
+        "title": "推送机器学习页面",
+        "path": "/config/snatchData/pushMachine",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548316847,
+        "up_time": 1551060108,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c734c8cbb6bbd1a8f3b6532",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "__v": 0,
+        "req_body_other": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"id\"},\"src\":{\"type\":\"string\",\"description\":\"来源\"},\"target\":{\"type\":\"string\",\"description\":\"产品\"},\"url\":{\"type\":\"string\",\"description\":\"链接\"},\"title\":{\"type\":\"string\",\"description\":\"标题\"},\"content\":{\"type\":\"string\",\"description\":\"内容\"},\"snatchtime\":{\"type\":\"string\",\"description\":\"抓取时间\"},\"createtime\":{\"type\":\"string\",\"description\":\"创建时间\"},\"moduleName\":{\"type\":\"string\",\"description\":\"模块名\"},\"bigClassify\":{\"type\":\"string\",\"description\":\"大分类\"},\"problemName\":{\"type\":\"string\",\"description\":\"现象名\"},\"classifyId\":{\"type\":\"string\"}},\"required\":[\"id\",\"src\",\"target\",\"classifyId\"]}",
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "req_body_type": "json"
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/machineMark",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1155,
+        "method": "POST",
+        "catid": 350,
+        "title": "机器批量标注功能",
+        "path": "/config/snatchData/machineMark",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548315414,
+        "up_time": 1551059561,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c734a69bb6bbd1a8f3b6531",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "__v": 0,
+        "req_body_other": "{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"id\"},\"src\":{\"type\":\"string\",\"description\":\"来源\"},\"target\":{\"type\":\"string\",\"description\":\"产品\"}},\"required\":[\"id\",\"src\",\"target\"]}",
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "req_body_type": "json"
+      },
+      {
+        "query_path": {
+          "path": "/config/snatchData/listData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "数据接口"
+        ],
+        "_id": 1126,
+        "method": "GET",
+        "catid": 350,
+        "title": "获取数据接口",
+        "path": "/config/snatchData/listData",
+        "project_id": 120,
+        "res_body_type": "json",
+        "uid": 27,
+        "add_time": 1548297368,
+        "up_time": 1552555600,
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b667b",
+            "name": "target",
+            "example": "安卓输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b667a",
+            "name": "src",
+            "example": "新浪微博",
+            "desc": "来源"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6679",
+            "name": "filterAuto",
+            "example": "0",
+            "desc": "机器过滤"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6678",
+            "name": "filterByPerson",
+            "example": "0",
+            "desc": "人工过滤"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6677",
+            "name": "isCopy",
+            "example": "0",
+            "desc": "克隆数据"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6676",
+            "name": "isCynthia",
+            "example": "0",
+            "desc": "导入"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6675",
+            "name": "createtimeStart",
+            "example": "",
+            "desc": "反馈时间开始值"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6674",
+            "name": "createtimeEnd",
+            "example": "",
+            "desc": "反馈时间结束值"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6673",
+            "name": "isCannotModule",
+            "example": "",
+            "desc": "无法判断"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6672",
+            "name": "moduleName",
+            "example": "",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6671",
+            "name": "problemName",
+            "example": "",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6670",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666f",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666e",
+            "name": "machineMark",
+            "example": "",
+            "desc": "机器标注正确错误"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666d",
+            "name": "snatchtimeStart",
+            "example": "",
+            "desc": "抓取时间起始值"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666c",
+            "name": "snatchtimeEnd",
+            "example": "",
+            "desc": "抓取时间结束值"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666b",
+            "name": "isImportMachine",
+            "example": "",
+            "desc": "导入机器学习"
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b666a",
+            "name": "isParticipateMachine",
+            "example": "",
+            "desc": "参与机器学习"
+          },
+          {
+            "required": "1",
+            "_id": "5c8a1e50bb6bbd1a8f3b6669",
+            "name": "pageSize",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c8a1e50bb6bbd1a8f3b6668",
+            "name": "pageNumber",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6667",
+            "name": "device",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6666",
+            "name": "lang",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c8a1e50bb6bbd1a8f3b6665",
+            "name": "osVersion",
+            "example": "",
+            "desc": ""
+          }
+        ],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}"
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "标签管理页面接口",
+    "desc": "tagManage",
+    "add_time": 1548398861,
+    "up_time": 1554791172,
+    "list": [
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getProblemName",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "new",
+          "数据接口"
+        ],
+        "_id": 1253,
+        "method": "GET",
+        "catid": 354,
+        "title": "根据产品模块获取现象名",
+        "path": "/module/ClassifyProblem/getProblemName",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73e02f2472951a945c7776",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e02f2472951a945c7775",
+            "name": "moduleName",
+            "example": "颜文字",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e02f2472951a945c7774",
+            "name": "targetId",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e02f2472951a945c7773",
+            "name": "isEffective",
+            "example": "",
+            "desc": ""
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"不希望有皮肤更新提示\",\"希望0键可以直接上屏\",\"希望增加花漾字类型\",\"希望卸载后保留斗图数据\",\"键盘显示白屏\",\"希望笔画支持繁体\",\"使用斗图崩溃\",\"希望可以禁用表情功能\",\"不会切换输入法\",\"找回账号或密码\",\"希望添加按键震动\",\"希望双拼模式可以展示对应的拼音\",\"希望可以关闭右下角的系统语音按钮\",\"安装卸载-其他\",\"花漾字好评\",\"不会使用上滑数字或符号\",\"无法调节按键音大小\",\"皮肤恢复默认\",\"希望自定义符号界面内容\",\"希望增加俄语键盘\",\"不会使用表情\",\"希望增加法语键盘\",\"无法切换输入法\",\"希望增加日语键盘\",\"无法使用快捷短语\",\"希望增加德语键盘\",\"不会使用智能回复\",\"无法使用语音输入\",\"皮肤制造机-其他\",\"不会换行\",\"其他\",\"键盘按键失效\",\"希望添加夜间皮肤\",\"快捷短语无法同步\",\"无法正常显示按键气泡\",\"符号显示异常\",\"不会使用通讯录词库\",\"希望能同步微信和QQ表情\",\"希望添加更多斗图表情\",\"无法使用皮肤\",\"词库好评\",\"斗图无法发送\",\"希望增加文字编辑功能\",\"不会修改皮肤候选字体颜色\",\"不会使用剪贴板\",\"斗图-其他\",\"不希望记忆用户词\",\"希望能自定义皮肤颜色\",\"不希望表情包下方显示搜狗输入法\",\"不喜欢按键音\",\"答题助手-其他\",\"英文大写锁定失效\",\"无法使用智能回复\",\"不会使用语音输入\",\"希望添加密文\",\"抱怨广告推送\",\"希望增加美图聊聊\",\"不会使用英文自动添加空格\",\"希望能自定义按键音\",\"希望语音按键可以选择关闭\",\"希望能自定义工具条\",\"快捷短语丢失\",\"不会使用文本替换\",\"无法下载皮肤\",\"希望能自定义1键功能\",\"不希望频繁提示更新\",\"不会使用智能分享\",\"希望添加离线语音\",\"无法关闭键盘\",\"不会更换手写笔迹颜色\",\"英文键盘-其他\",\"智能分享-其他\",\"希望增加移动光标按钮\",\"希望增加二维码扫描\",\"无法关闭英文自动添加空格\",\"希望滑行输入支持英文键盘\",\"跨屏输入-其他\",\"表情-其他\",\"按键响应异常\",\"希望能修改按键大小\",\"输入法与其他软件不兼容\",\"不会使用文字扫描\",\"希望拼音能显示声调\",\"剪贴板出现淘口令\",\"笔画-其他\",\"希望优化词库\",\"无法使用剪贴板\",\"希望更改键盘布局\",\"希望添加勋章功能\",\"希望拼音输入能使用笔画筛选\",\"希望添加中文全键数字键盘\",\"输入法吞字\",\"不会使用五笔输入\",\"希望关闭候选中的表情\",\"无法使用\",\"希望能同步pc端自定义短语\",\"不会使用笔画\",\"多语言键盘好评\",\"希望五笔可以记忆用户词\",\"皮肤丑\",\"无法使用按键震动\",\"希望添加造词功能\",\"按键音延迟\",\"希望滑行输入支持双拼\",\"希望添加自定义短语\",\"希望能分享皮肤\",\"希望大九键支持滑行输入\",\"不会使用手写\",\"不会使用双拼\",\"希望打字时输入框显示拼音\",\"不会使用手绘表情\",\"不会使用快捷短语\",\"智能分享好评\",\"无法使用复制粘贴\",\"语音输入无法自动添加标点\",\"简繁体好评\",\"不会使用细胞词库\",\"无法下载细胞词库\",\"希望增加固定首位\",\"斗图无法使用\",\"希望删除自带颜文字\",\"键盘手写-其他\",\"双拼好评\",\"希望快捷短语可以自定义分类\",\"无法更新\",\"不适配iPhone X\",\"希望能滑动键盘选择候选词\",\"无法删除剪贴板的内容\",\"输入导致其他程序崩溃\",\"无法在无线登录界面使用\",\"不会使用即刻俊译\",\"希望能默认英文输入\",\"不会使用手写注音\",\"希望加入全键盘分词键\",\"字无法通过其拼音单独打出\",\"希望语音输入后不需要点击完成\",\"希望大九键可以更改皮肤\",\"希望可以二次编辑自定义皮肤\",\"希望增加韩语键盘\",\"希望能注销通行证\",\"键盘-其他\",\"颜文字好评\",\"候选消失\",\"无法换行\",\"希望添加原苹果按键音\",\"斗图无法保存在本地\",\"选择的皮肤和下载的皮肤不一致\",\"不会使用密文\",\"无法记忆键盘模式\",\"无法使用颜文字\",\"希望iPhoneX键盘底部不留空白\",\"希望自定义字体样式\",\"希望添加扫码插件\",\"打字无法上屏\",\"无法使用皮肤制造机\",\"不会使用分词\",\"希望修改中英文切换键\",\"五笔-其他\",\"工具条-其他\",\"允许完全访问不生效\",\"希望3D touch能移动光标\",\"希望能设置多行候选\",\"颜文字总是默认打开新鲜\",\"希望添加快捷短语\",\"希望点两次空格出句号\",\"语音-其他\",\"无法显示输入法桌面图标\",\"不会删除皮肤\",\"希望自定义字体颜色\",\"logo图标好评\",\"希望模糊音支持滑行输入\",\"不会使用多语言键盘\",\"不会调节按键音大小\",\"增加调节按键音大小开关\",\"不会使用成对符号匹配功能\",\"无法使用即刻俊译\",\"希望能删除自带表情\",\"不会使用泛灵犀迷你卡功能\",\"希望智能分享结果能分享更多程序\",\"希望增加抖脸功能\",\"手写识别不准\",\"清除缓存功能好评\",\"希望能收藏皮肤\",\"智能分享搜索显示网络失败\",\"希望增加英文纠错\",\"希望可以直接发送斗图\",\"希望能切换键盘字母大小写\",\"希望加入U模式输入\",\"无法使用中英互译\",\"希望增加键盘按键\",\"希望优化语音输入自动添加的符号\",\"希望能调节皮肤透明度\",\"无法使用分词\",\"笔画好评\",\"不会使用符号锁定功能\",\"希望更改剪贴板入口位置\",\"希望表情能按使用频率自动调频\",\"无法同步\",\"无法关闭按键音\",\"不会使用模糊音\",\"抱怨语音更新后不好用\",\"希望常用表情不优先展示新鲜Emoji颜\",\"希望斗图支持其他程序\",\"希望跨屏输入支持其他输入模式\",\"无法使用单手键盘\",\"语音识别慢\",\"候选光标位置异常\",\"快捷翻译-其他\",\"无法使用小字输入\",\"智能纠错好评\",\"长按删除键不能连续删除\",\"希望更改快捷短语入口\",\"不会登录通行证\",\"希望增加弧形键盘\",\"希望小地球按钮是独立按键\",\"自动变为繁体\",\"无法显示工具条\",\"输入法桌面图标丑\",\"希望增加biubiu键盘\",\"希望增加中英混输功能\",\"按键震动好评\",\"希望能在锁屏状态下使用输入法\",\"希望可以关闭语音输入功能\",\"不希望斗图下方显示搜狗输入法\",\"无法发送表情\",\"候选-其他\",\"键盘列表中输入法显示null\",\"频繁同步词库\",\"快捷翻译好评\",\"不适配外接键盘\",\"希望增加更多语言键盘\",\"大九键-其他\",\"快捷短语-其他\",\"无法使用手写注音\",\"不会使用符号\",\"斗图无法显示\",\"希望能设置候选词个数\",\"不会使用皮肤制造机\",\"快捷短语好评\",\"希望增加快捷短语的支持字数\",\"希望皮肤制造机能自定义按钮\",\"希望表情支持Tim\",\"无法使用动态皮肤\",\"手写某个字写不出来\",\"用户吐槽斗图内容\",\"希望使用滑行输入时可以移动光标\",\"抱怨钱包广告\",\"不会切换简繁体\",\"无法使用按键音\",\"不会使用搜索表情\",\"无法使用智能分享\",\"希望添加等级功能\",\"不会使用九键自定义符号顺序\",\"好评\",\"希望可以搜索表情\",\"希望能设置键盘亮度\",\"语音识别不准\",\"语音输入好评\",\"不会使用跨屏输入\",\"希望下载过的皮肤能同步到云端\",\"不会使用花漾字\",\"希望能上传皮肤\",\"希望能自动读取短信验证码\",\"希望能全屏手写\",\"希望添加词库\",\"不会关闭独立语音按钮\",\"希望增加细胞词库个数上限\",\"不会使用句号快捷键\",\"键盘显示异常\",\"希望添加拆分键盘\",\"键盘调节-其他\",\"无法添加快捷短语\",\"无法使用符号\",\"希望增加泰语键盘\",\"云输入好评\",\"希望可以直接发送表情\",\"希望能选择候选中是否有颜文字\",\"希望语音支持多种语言\",\"无法使用九键自定义符号顺序\",\"云输入-其他\",\"无法滑动键盘移动光标\",\"希望支持导入词库\",\"表情丢失\",\"logo图标-其他\",\"希望能删除自带词汇\",\"候选显示异常\",\"按键音好评\",\"无法输入\",\"希望增加剪贴板上限条数\",\"不适配11寸iPad Pro\",\"不会清空用户词库\",\"键盘调起-其他\",\"个人中心-其\"],\"minLength\":20,\"maxLength\":20},\"minItems\":10,\"maxItems\":20,\"uniqueItems\":true}}}",
+        "uid": 11,
+        "add_time": 1548398863,
+        "up_time": 1551097903,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/deleteSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1938,
+        "method": "GET",
+        "catid": 354,
+        "title": "删除勾选",
+        "path": "/module/ClassifyProblem/deleteSelect",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 114,
+        "add_time": 1548915637,
+        "up_time": 1548925878,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c529412131e795099065608",
+            "name": "ids",
+            "desc": "删除勾选的id"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/deleteClassify",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1219,
+        "method": "GET",
+        "catid": 354,
+        "title": "删除数据",
+        "path": "/module/ClassifyProblem/deleteClassify",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c4abb7d131e79509906547e",
+            "name": "id",
+            "example": "1",
+            "desc": ""
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548398862,
+        "up_time": 1548925873,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/copyClassify",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1287,
+        "method": "GET",
+        "catid": 354,
+        "title": "复制数据",
+        "path": "/module/ClassifyProblem/copyClassify",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5b76b2accda98b04f0e102b5",
+            "desc": "",
+            "example": "1",
+            "name": "id"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "uid": 11,
+        "add_time": 1548398863,
+        "up_time": 1548403377,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getList",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "数据接口"
+        ],
+        "_id": 1227,
+        "method": "GET",
+        "catid": 354,
+        "title": "多重查询",
+        "path": "/module/ClassifyProblem/getList",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73e03c2472951a945c7788",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7787",
+            "name": "moduleName",
+            "example": "all",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7786",
+            "name": "problemName",
+            "example": "all",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7785",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7784",
+            "name": "createName",
+            "example": "胡静天",
+            "desc": "编辑者"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7783",
+            "name": "isEffective",
+            "example": "1",
+            "desc": "是否生效 0 和 1"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7782",
+            "name": "createTimeStart",
+            "example": "2018-08-01",
+            "desc": "现象创建开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7781",
+            "name": "createTimeEnd",
+            "example": "2018-08-02",
+            "desc": "现象创建结束时间"
+          },
+          {
+            "required": "1",
+            "_id": "5c73e03c2472951a945c7780",
+            "name": "pageNumber",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "1",
+            "_id": "5c73e03c2472951a945c777f",
+            "name": "pageSize",
+            "example": "50",
+            "desc": "大小"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c777e",
+            "name": "searchValue",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c777d",
+            "name": "editTimeStart",
+            "example": "",
+            "desc": "编辑开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c777c",
+            "name": "editTimeEnd",
+            "example": "",
+            "desc": "编辑结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c777b",
+            "name": "dataCreateTimeStart",
+            "example": "",
+            "desc": "数据反馈开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c777a",
+            "name": "dataCreateTimeEnd",
+            "example": "",
+            "desc": "数据反馈结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7779",
+            "name": "selectCondition",
+            "example": "",
+            "desc": " >  <  = "
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7778",
+            "name": "selectValue",
+            "example": "",
+            "desc": "反馈大于小于的值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e03c2472951a945c7777",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"object\",\"properties\":{\"classifyProblems\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\"},\"targetId\":{\"type\":\"number\"},\"target\":{\"type\":\"string\"},\"moduleName\":{\"type\":\"string\"},\"problemName\":{\"type\":\"string\"},\"childProblemName\":{\"type\":\"null\"},\"isDeleted\":{\"type\":\"number\"},\"createTime\":{\"type\":\"string\"},\"lastUpdateTime\":{\"type\":\"null\"},\"createName\":{\"type\":\"string\"},\"bigClassify\":{\"type\":\"string\"},\"isOtherModule\":{\"type\":\"string\"},\"isChecked\":{\"type\":\"number\"},\"checkedName\":{\"type\":\"string\"},\"failureTime\":{\"type\":\"null\"},\"isEffective\":{\"type\":\"number\"},\"decisionCriteria\":{\"type\":\"null\"},\"remarks\":{\"type\":\"null\"},\"hitsNumber\":{\"type\":\"number\"},\"isMobileInputMethod\":{\"type\":\"number\"},\"isSameAsOther\":{\"type\":\"number\"}},\"required\":[\"id\",\"targetId\",\"target\",\"moduleName\",\"problemName\",\"childProblemName\",\"isDeleted\",\"createTime\",\"lastUpdateTime\",\"createName\",\"bigClassify\",\"isOtherModule\",\"isChecked\",\"checkedName\",\"failureTime\",\"isEffective\",\"decisionCriteria\",\"remarks\",\"hitsNumber\",\"isMobileInputMethod\",\"isSameAsOther\"]}},\"num\":{\"type\":\"number\"}}}}}",
+        "uid": 11,
+        "add_time": 1548398862,
+        "up_time": 1551097916,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/invalidSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1778,
+        "method": "GET",
+        "catid": 354,
+        "title": "失效勾选",
+        "path": "/module/ClassifyProblem/invalidSelect",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6bb8d4131e795099065728",
+            "name": "ids",
+            "example": "",
+            "desc": "勾选id"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548401982,
+        "up_time": 1550564730,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/exportSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "new"
+        ],
+        "_id": 1794,
+        "method": "GET",
+        "catid": 354,
+        "title": "导出勾选",
+        "path": "/module/ClassifyProblem/exportSelect",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c4abe4cef0dcf509e2c838c",
+            "name": "ids",
+            "example": "",
+            "desc": ""
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548402175,
+        "up_time": 1550643729,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/exportAll",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "new"
+        ],
+        "_id": 1786,
+        "method": "GET",
+        "catid": 354,
+        "title": "导出所有",
+        "path": "/module/ClassifyProblem/exportAll",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6cbee0ef0dcf509e2c84cf",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84ce",
+            "name": "moduleName",
+            "example": "all",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84cd",
+            "name": "problemName",
+            "example": "all",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84cc",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84cb",
+            "name": "createName",
+            "example": "胡静天",
+            "desc": "编辑者"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84ca",
+            "name": "isEffective",
+            "example": "1",
+            "desc": "是否生效 0 和 1"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c9",
+            "name": "createTimeStart",
+            "example": "2018-08-01",
+            "desc": "现象创建开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c8",
+            "name": "createTimeEnd",
+            "example": "2018-08-02",
+            "desc": "现象创建结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c7",
+            "name": "pageNumber",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c6",
+            "name": "pageSize",
+            "example": "50",
+            "desc": "大小"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c5",
+            "name": "searchValue",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c4",
+            "name": "editTimeStart",
+            "example": "",
+            "desc": "编辑开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c3",
+            "name": "editTimeEnd",
+            "example": "",
+            "desc": "编辑结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c2",
+            "name": "dataCreateTimeStart",
+            "example": "",
+            "desc": "数据反馈开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c1",
+            "name": "dataCreateTimeEnd",
+            "example": "",
+            "desc": "数据反馈结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84c0",
+            "name": "selectCondition",
+            "example": "",
+            "desc": " >  <  = "
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84bf",
+            "name": "selectValue",
+            "example": "",
+            "desc": "反馈大于小于的值"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cbee0ef0dcf509e2c84be",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548402151,
+        "up_time": 1550643730,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getChildProblemName",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "new",
+          "数据接口"
+        ],
+        "_id": 1712,
+        "method": "GET",
+        "catid": 354,
+        "title": "根据产品模块现象获取子现象",
+        "path": "/module/ClassifyProblem/getChildProblemName",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73e036bb6bbd1a8f3b6578",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e036bb6bbd1a8f3b6577",
+            "name": "moduleName",
+            "example": "颜文字",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e036bb6bbd1a8f3b6576",
+            "name": "targetId",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e036bb6bbd1a8f3b6575",
+            "name": "problemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e036bb6bbd1a8f3b6574",
+            "name": "isEffective",
+            "example": "",
+            "desc": ""
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"不希望有皮肤更新提示\",\"希望0键可以直接上屏\",\"希望增加花漾字类型\",\"希望卸载后保留斗图数据\",\"键盘显示白屏\",\"希望笔画支持繁体\",\"使用斗图崩溃\",\"希望可以禁用表情功能\",\"不会切换输入法\",\"找回账号或密码\",\"希望添加按键震动\",\"希望双拼模式可以展示对应的拼音\",\"希望可以关闭右下角的系统语音按钮\",\"安装卸载-其他\",\"花漾字好评\",\"不会使用上滑数字或符号\",\"无法调节按键音大小\",\"皮肤恢复默认\",\"希望自定义符号界面内容\",\"希望增加俄语键盘\",\"不会使用表情\",\"希望增加法语键盘\",\"无法切换输入法\",\"希望增加日语键盘\",\"无法使用快捷短语\",\"希望增加德语键盘\",\"不会使用智能回复\",\"无法使用语音输入\",\"皮肤制造机-其他\",\"不会换行\",\"其他\",\"键盘按键失效\",\"希望添加夜间皮肤\",\"快捷短语无法同步\",\"无法正常显示按键气泡\",\"符号显示异常\",\"不会使用通讯录词库\",\"希望能同步微信和QQ表情\",\"希望添加更多斗图表情\",\"无法使用皮肤\",\"词库好评\",\"斗图无法发送\",\"希望增加文字编辑功能\",\"不会修改皮肤候选字体颜色\",\"不会使用剪贴板\",\"斗图-其他\",\"不希望记忆用户词\",\"希望能自定义皮肤颜色\",\"不希望表情包下方显示搜狗输入法\",\"不喜欢按键音\",\"答题助手-其他\",\"英文大写锁定失效\",\"无法使用智能回复\",\"不会使用语音输入\",\"希望添加密文\",\"抱怨广告推送\",\"希望增加美图聊聊\",\"不会使用英文自动添加空格\",\"希望能自定义按键音\",\"希望语音按键可以选择关闭\",\"希望能自定义工具条\",\"快捷短语丢失\",\"不会使用文本替换\",\"无法下载皮肤\",\"希望能自定义1键功能\",\"不希望频繁提示更新\",\"不会使用智能分享\",\"希望添加离线语音\",\"无法关闭键盘\",\"不会更换手写笔迹颜色\",\"英文键盘-其他\",\"智能分享-其他\",\"希望增加移动光标按钮\",\"希望增加二维码扫描\",\"无法关闭英文自动添加空格\",\"希望滑行输入支持英文键盘\",\"跨屏输入-其他\",\"表情-其他\",\"按键响应异常\",\"希望能修改按键大小\",\"输入法与其他软件不兼容\",\"不会使用文字扫描\",\"希望拼音能显示声调\",\"剪贴板出现淘口令\",\"笔画-其他\",\"希望优化词库\",\"无法使用剪贴板\",\"希望更改键盘布局\",\"希望添加勋章功能\",\"希望拼音输入能使用笔画筛选\",\"希望添加中文全键数字键盘\",\"输入法吞字\",\"不会使用五笔输入\",\"希望关闭候选中的表情\",\"无法使用\",\"希望能同步pc端自定义短语\",\"不会使用笔画\",\"多语言键盘好评\",\"希望五笔可以记忆用户词\",\"皮肤丑\",\"无法使用按键震动\",\"希望添加造词功能\",\"按键音延迟\",\"希望滑行输入支持双拼\",\"希望添加自定义短语\",\"希望能分享皮肤\",\"希望大九键支持滑行输入\",\"不会使用手写\",\"不会使用双拼\",\"希望打字时输入框显示拼音\",\"不会使用手绘表情\",\"不会使用快捷短语\",\"智能分享好评\",\"无法使用复制粘贴\",\"语音输入无法自动添加标点\",\"简繁体好评\",\"不会使用细胞词库\",\"无法下载细胞词库\",\"希望增加固定首位\",\"斗图无法使用\",\"希望删除自带颜文字\",\"键盘手写-其他\",\"双拼好评\",\"希望快捷短语可以自定义分类\",\"无法更新\",\"不适配iPhone X\",\"希望能滑动键盘选择候选词\",\"无法删除剪贴板的内容\",\"输入导致其他程序崩溃\",\"无法在无线登录界面使用\",\"不会使用即刻俊译\",\"希望能默认英文输入\",\"不会使用手写注音\",\"希望加入全键盘分词键\",\"字无法通过其拼音单独打出\",\"希望语音输入后不需要点击完成\",\"希望大九键可以更改皮肤\",\"希望可以二次编辑自定义皮肤\",\"希望增加韩语键盘\",\"希望能注销通行证\",\"键盘-其他\",\"颜文字好评\",\"候选消失\",\"无法换行\",\"希望添加原苹果按键音\",\"斗图无法保存在本地\",\"选择的皮肤和下载的皮肤不一致\",\"不会使用密文\",\"无法记忆键盘模式\",\"无法使用颜文字\",\"希望iPhoneX键盘底部不留空白\",\"希望自定义字体样式\",\"希望添加扫码插件\",\"打字无法上屏\",\"无法使用皮肤制造机\",\"不会使用分词\",\"希望修改中英文切换键\",\"五笔-其他\",\"工具条-其他\",\"允许完全访问不生效\",\"希望3D touch能移动光标\",\"希望能设置多行候选\",\"颜文字总是默认打开新鲜\",\"希望添加快捷短语\",\"希望点两次空格出句号\",\"语音-其他\",\"无法显示输入法桌面图标\",\"不会删除皮肤\",\"希望自定义字体颜色\",\"logo图标好评\",\"希望模糊音支持滑行输入\",\"不会使用多语言键盘\",\"不会调节按键音大小\",\"增加调节按键音大小开关\",\"不会使用成对符号匹配功能\",\"无法使用即刻俊译\",\"希望能删除自带表情\",\"不会使用泛灵犀迷你卡功能\",\"希望智能分享结果能分享更多程序\",\"希望增加抖脸功能\",\"手写识别不准\",\"清除缓存功能好评\",\"希望能收藏皮肤\",\"智能分享搜索显示网络失败\",\"希望增加英文纠错\",\"希望可以直接发送斗图\",\"希望能切换键盘字母大小写\",\"希望加入U模式输入\",\"无法使用中英互译\",\"希望增加键盘按键\",\"希望优化语音输入自动添加的符号\",\"希望能调节皮肤透明度\",\"无法使用分词\",\"笔画好评\",\"不会使用符号锁定功能\",\"希望更改剪贴板入口位置\",\"希望表情能按使用频率自动调频\",\"无法同步\",\"无法关闭按键音\",\"不会使用模糊音\",\"抱怨语音更新后不好用\",\"希望常用表情不优先展示新鲜Emoji颜\",\"希望斗图支持其他程序\",\"希望跨屏输入支持其他输入模式\",\"无法使用单手键盘\",\"语音识别慢\",\"候选光标位置异常\",\"快捷翻译-其他\",\"无法使用小字输入\",\"智能纠错好评\",\"长按删除键不能连续删除\",\"希望更改快捷短语入口\",\"不会登录通行证\",\"希望增加弧形键盘\",\"希望小地球按钮是独立按键\",\"自动变为繁体\",\"无法显示工具条\",\"输入法桌面图标丑\",\"希望增加biubiu键盘\",\"希望增加中英混输功能\",\"按键震动好评\",\"希望能在锁屏状态下使用输入法\",\"希望可以关闭语音输入功能\",\"不希望斗图下方显示搜狗输入法\",\"无法发送表情\",\"候选-其他\",\"键盘列表中输入法显示null\",\"频繁同步词库\",\"快捷翻译好评\",\"不适配外接键盘\",\"希望增加更多语言键盘\",\"大九键-其他\",\"快捷短语-其他\",\"无法使用手写注音\",\"不会使用符号\",\"斗图无法显示\",\"希望能设置候选词个数\",\"不会使用皮肤制造机\",\"快捷短语好评\",\"希望增加快捷短语的支持字数\",\"希望皮肤制造机能自定义按钮\",\"希望表情支持Tim\",\"无法使用动态皮肤\",\"手写某个字写不出来\",\"用户吐槽斗图内容\",\"希望使用滑行输入时可以移动光标\",\"抱怨钱包广告\",\"不会切换简繁体\",\"无法使用按键音\",\"不会使用搜索表情\",\"无法使用智能分享\",\"希望添加等级功能\",\"不会使用九键自定义符号顺序\",\"好评\",\"希望可以搜索表情\",\"希望能设置键盘亮度\",\"语音识别不准\",\"语音输入好评\",\"不会使用跨屏输入\",\"希望下载过的皮肤能同步到云端\",\"不会使用花漾字\",\"希望能上传皮肤\",\"希望能自动读取短信验证码\",\"希望能全屏手写\",\"希望添加词库\",\"不会关闭独立语音按钮\",\"希望增加细胞词库个数上限\",\"不会使用句号快捷键\",\"键盘显示异常\",\"希望添加拆分键盘\",\"键盘调节-其他\",\"无法添加快捷短语\",\"无法使用符号\",\"希望增加泰语键盘\",\"云输入好评\",\"希望可以直接发送表情\",\"希望能选择候选中是否有颜文字\",\"希望语音支持多种语言\",\"无法使用九键自定义符号顺序\",\"云输入-其他\",\"无法滑动键盘移动光标\",\"希望支持导入词库\",\"表情丢失\",\"logo图标-其他\",\"希望能删除自带词汇\",\"候选显示异常\",\"按键音好评\",\"无法输入\",\"希望增加剪贴板上限条数\",\"不适配11寸iPad Pro\",\"不会清空用户词库\",\"键盘调起-其他\",\"个人中心-其\"],\"minLength\":20,\"maxLength\":20},\"minItems\":20,\"maxItems\":20}}}",
+        "uid": 11,
+        "add_time": 1548399546,
+        "up_time": 1551097910,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/deleteAll",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1770,
+        "method": "GET",
+        "catid": 354,
+        "title": "删除所有",
+        "path": "/module/ClassifyProblem/deleteAll",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c52578a131e7950990655ca",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c9",
+            "name": "moduleName",
+            "example": "all",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c8",
+            "name": "problemName",
+            "example": "all",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c7",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c6",
+            "name": "createName",
+            "example": "胡静天",
+            "desc": "编辑者"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c5",
+            "name": "isEffective",
+            "example": "1",
+            "desc": "是否生效 0 和 1"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c4",
+            "name": "createTimeStart",
+            "example": "2018-08-01",
+            "desc": "现象创建开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c3",
+            "name": "createTimeEnd",
+            "example": "2018-08-02",
+            "desc": "现象创建结束时间"
+          },
+          {
+            "required": "1",
+            "_id": "5c52578a131e7950990655c2",
+            "name": "pageNumber",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "1",
+            "_id": "5c52578a131e7950990655c1",
+            "name": "pageSize",
+            "example": "50",
+            "desc": "大小"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655c0",
+            "name": "searchValue",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655bf",
+            "name": "editTimeStart",
+            "example": "",
+            "desc": "编辑开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655be",
+            "name": "editTimeEnd",
+            "example": "",
+            "desc": "编辑结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655bd",
+            "name": "dataCreateTimeStart",
+            "example": "",
+            "desc": "数据反馈开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655bc",
+            "name": "dataCreateTimeEnd",
+            "example": "",
+            "desc": "数据反馈结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655bb",
+            "name": "selectCondition",
+            "example": "",
+            "desc": " >  <  = "
+          },
+          {
+            "required": "0",
+            "_id": "5c52578a131e7950990655ba",
+            "name": "selectValue",
+            "example": "",
+            "desc": "反馈大于小于的值"
+          },
+          {
+            "required": "1",
+            "_id": "5c52578a131e7950990655b9",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548401954,
+        "up_time": 1548925902,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getModuleByProduct",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "数据接口"
+        ],
+        "_id": 1261,
+        "method": "GET",
+        "catid": 354,
+        "title": "根据产品获取模块",
+        "path": "/module/ClassifyProblem/getModuleByProduct",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73e0152472951a945c7772",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0152472951a945c7771",
+            "name": "targetId",
+            "example": "10",
+            "desc": ""
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"大九键\",\"键盘手写\",\"工具条\",\"颜文字\",\"五笔\",\"热词\",\"快捷短语\",\"logo图标\",\"候选\",\"游戏键盘\",\"广告\",\"开挂模式\",\"键盘调起\",\"手写\",\"夜间模式\",\"笔画\",\"其他\",\"花漾字\",\"悬浮键盘\",\"英文键盘\",\"兼容性\",\"语音\",\"跨屏输入\",\"皮肤\",\"多语言键盘\",\"双拼\",\"性能\",\"云输入\",\"快捷翻译\",\"个人中心\",\"文本替换\",\"按键音\",\"安装卸载\",\"升级\",\"斗图\",\"系统\",\"表情\",\"输入统计\",\"模糊音\",\"键盘调节\",\"字体\",\"设置\",\"3D touch\",\"吐槽\",\"英文预测\",\"智能分享\",\"好评\",\"简繁体\",\"抖脸\",\"剪贴板\",\"皮肤制造机\",\"符号键盘\",\"应用中心\",\"智能回复\",\"词库\",\"键盘\",\"访问权限\",\"滑行输入\"]},\"uniqueItems\":true}}}",
+        "uid": 11,
+        "add_time": 1548398863,
+        "up_time": 1551097877,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/insertClassify",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1737,
+        "method": "POST",
+        "catid": 354,
+        "title": "添加现象",
+        "path": "/module/ClassifyProblem/insertClassify",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1548401355,
+        "up_time": 1548925875,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c4ad52cef0dcf509e2c83c1",
+            "name": "target",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c4ad52cef0dcf509e2c83c0",
+            "name": "moduleName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c4ad52cef0dcf509e2c83bf",
+            "name": "problemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c4ad52cef0dcf509e2c83be",
+            "name": "bigClassify",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c4ad52cef0dcf509e2c83bd",
+            "name": "childProblem",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c4ad52cef0dcf509e2c83bc",
+            "name": "decisionCriteria",
+            "example": "",
+            "desc": "判定准则"
+          },
+          {
+            "required": "0",
+            "_id": "5c4ad52cef0dcf509e2c83bb",
+            "name": "remarks",
+            "example": "",
+            "desc": "备注"
+          }
+        ],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c4ad52cef0dcf509e2c83c2",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "req_body_type": "form"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/statistics",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "update",
+          "数据接口"
+        ],
+        "_id": 1729,
+        "method": "GET",
+        "catid": 354,
+        "title": "统计接口",
+        "path": "/module/ClassifyProblem/statistics",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73e01dbb6bbd1a8f3b6573",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6572",
+            "name": "moduleName",
+            "example": "all",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6571",
+            "name": "problemName",
+            "example": "all",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6570",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656f",
+            "name": "createName",
+            "example": "胡静天",
+            "desc": "编辑者"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656e",
+            "name": "isEffective",
+            "example": "1",
+            "desc": "是否生效 0 和 1"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656d",
+            "name": "createTimeStart",
+            "example": "2018-08-01",
+            "desc": "现象创建开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656c",
+            "name": "createTimeEnd",
+            "example": "2018-08-02",
+            "desc": "现象创建结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656b",
+            "name": "pageNumber",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b656a",
+            "name": "pageSize",
+            "example": "50",
+            "desc": "大小"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6569",
+            "name": "searchValue",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6568",
+            "name": "editTimeStart",
+            "example": "",
+            "desc": "编辑开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6567",
+            "name": "editTimeEnd",
+            "example": "",
+            "desc": "编辑结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6566",
+            "name": "dataCreateTimeStart",
+            "example": "",
+            "desc": "数据反馈开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6565",
+            "name": "dataCreateTimeEnd",
+            "example": "",
+            "desc": "数据反馈结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6564",
+            "name": "selectCondition",
+            "example": "",
+            "desc": " >  <  = "
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6563",
+            "name": "selectValue",
+            "example": "",
+            "desc": "反馈大于小于的值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e01dbb6bbd1a8f3b6562",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"object\",\"properties\":{\"all\":{\"type\":\"object\",\"properties\":{\"bigClassify\":{\"type\":\"integer\"},\"module\":{\"type\":\"integer\"},\"problem\":{\"type\":\"integer\"},\"childProblem\":{\"type\":\"integer\"},\"effective\":{\"type\":\"integer\"},\"dataNum\":{\"type\":\"integer\"}},\"required\":[\"bigClassify\",\"module\",\"problem\",\"childProblem\",\"effective\",\"dataNum\"]},\"now\":{\"type\":\"string\"}},\"required\":[\"all\",\"now\"]}}}",
+        "uid": 11,
+        "add_time": 1548400902,
+        "up_time": 1551097885,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/updateSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "update"
+        ],
+        "_id": 1754,
+        "method": "GET",
+        "catid": 354,
+        "title": "编辑勾选现象",
+        "path": "/module/ClassifyProblem/updateSelect",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6cf654131e79509906572f",
+            "name": "ids",
+            "example": "",
+            "desc": "以逗号分隔"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e79509906572e",
+            "name": "moduleName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e79509906572d",
+            "name": "problemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e79509906572c",
+            "name": "bigClassify",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e79509906572b",
+            "name": "childProblem",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e79509906572a",
+            "name": "decisionCriteria",
+            "example": "",
+            "desc": "判定准则"
+          },
+          {
+            "required": "0",
+            "_id": "5c6cf654131e795099065729",
+            "name": "remarks",
+            "example": "",
+            "desc": "备注"
+          }
+        ],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c6cf654131e795099065730",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548401753,
+        "up_time": 1550644820,
+        "__v": 0,
+        "req_body_type": "form"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/updateClassify",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1746,
+        "method": "POST",
+        "catid": 354,
+        "title": "编辑单条现象",
+        "path": "/module/ClassifyProblem/updateClassify",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c73a8aebb6bbd1a8f3b6555",
+            "name": "id",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c73a8aebb6bbd1a8f3b6554",
+            "name": "moduleName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c73a8aebb6bbd1a8f3b6553",
+            "name": "problemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c73a8aebb6bbd1a8f3b6552",
+            "name": "bigClassify",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73a8aebb6bbd1a8f3b6551",
+            "name": "childProblemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c73a8aebb6bbd1a8f3b6550",
+            "name": "decisionCriteria",
+            "example": "",
+            "desc": "判定准则"
+          },
+          {
+            "required": "0",
+            "_id": "5c73a8aebb6bbd1a8f3b654f",
+            "name": "remarks",
+            "example": "",
+            "desc": "备注"
+          }
+        ],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c73a8aebb6bbd1a8f3b6556",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548401560,
+        "up_time": 1551083694,
+        "__v": 0,
+        "req_body_type": "form"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/updateAll",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "new"
+        ],
+        "_id": 1762,
+        "method": "GET",
+        "catid": 354,
+        "title": "编辑所有",
+        "path": "/module/ClassifyProblem/updateAll",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5c6d0d59bb6bbd1a8f3b6513",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6d0d59bb6bbd1a8f3b6512",
+            "name": "target",
+            "example": "ios输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6511",
+            "name": "moduleName",
+            "example": "all",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6510",
+            "name": "problemName",
+            "example": "all",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650f",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650e",
+            "name": "createName",
+            "example": "胡静天",
+            "desc": "编辑者"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650d",
+            "name": "isEffective",
+            "example": "1",
+            "desc": "是否生效 0 和 1"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650c",
+            "name": "createTimeStart",
+            "example": "2018-08-01",
+            "desc": "现象创建开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650b",
+            "name": "createTimeEnd",
+            "example": "2018-08-02",
+            "desc": "现象创建结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b650a",
+            "name": "pageNumber",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6509",
+            "name": "pageSize",
+            "example": "50",
+            "desc": "大小"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6508",
+            "name": "searchValue",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6507",
+            "name": "editTimeStart",
+            "example": "",
+            "desc": "编辑开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6506",
+            "name": "editTimeEnd",
+            "example": "",
+            "desc": "编辑结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6505",
+            "name": "dataCreateTimeStart",
+            "example": "",
+            "desc": "数据反馈开始时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6504",
+            "name": "dataCreateTimeEnd",
+            "example": "",
+            "desc": "数据反馈结束时间"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6503",
+            "name": "selectCondition",
+            "example": "",
+            "desc": " >  <  = "
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6502",
+            "name": "selectValue",
+            "example": "",
+            "desc": "反馈大于小于的值"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6501",
+            "name": "newModuleName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b6500",
+            "name": "newProblemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b64ff",
+            "name": "newChildProblemName",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b64fe",
+            "name": "newDecisionCriteria",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b64fd",
+            "name": "newRemarks",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b64fc",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          },
+          {
+            "required": "0",
+            "_id": "5c6d0d59bb6bbd1a8f3b64fb",
+            "name": "newBigClassify",
+            "example": "",
+            "desc": "编辑大分类"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "uid": 11,
+        "add_time": 1548401822,
+        "up_time": 1550653296,
+        "__v": 0,
+        "req_body_type": "form"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getAllProduct",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "数据接口"
+        ],
+        "_id": 1321,
+        "method": "GET",
+        "catid": 354,
+        "title": "获取所有产品",
+        "path": "/module/ClassifyProblem/getAllProduct",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [],
+        "uid": 11,
+        "add_time": 1548398864,
+        "up_time": 1551097849,
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"IOS输入法\",\"五笔输入法\",\"Linux输入法\",\"其它\",\"Mac-五笔\",\"PC浏览器\",\"Passport\",\"PC输入法_智慧版\",\"安卓输入法\",\"一点分期\",\"安卓浏览器\",\"安卓输入法(定制版)\",\"搜狗金融\",\"iOS浏览器\",\"搜狗安卓浏览器\",\"搜狗翻译机\",\"海外输入法\",\"Mac输入法\",\"搜狗输入法\",\"注音输入法iOS\",\"PC输入法\",\"注音输入法Android\"]},\"minItems\":5,\"maxItems\":10,\"uniqueItems\":true}},\"required\":[\"msg\",\"code\",\"data\"]}"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getAllBigClassifys",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1720,
+        "method": "GET",
+        "catid": 354,
+        "title": "获取所有大分类",
+        "path": "/module/ClassifyProblem/getAllBigClassifys",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1548399841,
+        "up_time": 1551427925,
+        "req_query": [
+          {
+            "required": "0",
+            "_id": "5c78e9552472951a945c77eb",
+            "name": "target",
+            "desc": ""
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"问题\",\"建议\",\"吐槽\",\"好评\"]},\"minItems\":4,\"maxItems\":4,\"uniqueItems\":true}}}"
+      },
+      {
+        "query_path": {
+          "path": "/module/ClassifyProblem/getAllEditUsers",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "update"
+        ],
+        "_id": 1329,
+        "method": "GET",
+        "catid": 354,
+        "title": "获取所有编辑",
+        "path": "/module/ClassifyProblem/getAllEditUsers",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"oneOf\":[{\"type\":\"null\"},{\"type\":\"null\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"},{\"type\":\"string\"}],\"type\":\"string\",\"enum\":[\"莫英春\",\"王小波\",\"马少明\",\"刘庚\",\"常玲玲\",\"赵亮\",\"张奥红\",\"undefined\",\"杜淑芳\",\"陈健\",\"杨文秀\",\"陈立涵\",\"唐晓洁\",\"[支持]张涛\",\"张涛-支持\",\"张叶\",\"王家薇\",\"郝立胜\",\"赵志广\",\"刘波英\",\"杨春晓\",\"张倩-博彦\",\"胡静天\",\"李艳\",\"张洁\",\"陈秋寒\",\"王勋\",\"高硕\",\"曹荟萃\",\"王燕强\",\"张涛\",\"徐文静\",\"null\",\"张哲铭\",\"于海洋\",\"左青山\",\"黄泽峰\",\"徐文静-支持\",\"甄文涛\",\"韩菲\",\"吴迪\",\"丁海波\"]},\"minItems\":10,\"maxItems\":20,\"uniqueItems\":true}}}",
+        "uid": 11,
+        "add_time": 1548398864,
+        "up_time": 1551148466,
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "机器学习页面接口",
+    "desc": " machineLearn",
+    "add_time": 1548402653,
+    "up_time": 1554791194,
+    "list": [
+      {
+        "query_path": {
+          "path": "/machineScience/uploadData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1836,
+        "method": "GET",
+        "catid": 413,
+        "title": "上传数据",
+        "path": "/machineScience/uploadData",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "uid": 11,
+        "add_time": 1548403130,
+        "up_time": 1551097726,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/machineScience/deleteData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1844,
+        "method": "GET",
+        "catid": 413,
+        "title": "删除数据",
+        "path": "/machineScience/deleteData",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6a5740ef0dcf509e2c8497",
+            "name": "id",
+            "desc": ""
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "uid": 11,
+        "add_time": 1548403190,
+        "up_time": 1550473024,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/machineScience/deleteSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1828,
+        "method": "GET",
+        "catid": 413,
+        "title": "批量删除",
+        "path": "/machineScience/deleteSelect",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6a5e3c131e795099065718",
+            "name": "ids",
+            "desc": ""
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "uid": 11,
+        "add_time": 1548403106,
+        "up_time": 1550474812,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/machineScience/updateSelect",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1820,
+        "method": "GET",
+        "catid": 413,
+        "title": "批量更新",
+        "path": "/machineScience/updateSelect",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6a5c91ef0dcf509e2c84aa",
+            "name": "ids",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c6a5c91ef0dcf509e2c84a9",
+            "name": "state",
+            "example": "1",
+            "desc": "是：1  否：0"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "",
+        "uid": 11,
+        "add_time": 1548403074,
+        "up_time": 1550474385,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/machineScience/updateData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1811,
+        "method": "GET",
+        "catid": 413,
+        "title": "数据更新",
+        "path": "/machineScience/updateData",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1548402939,
+        "up_time": 1550474891,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c6a5e8bef0dcf509e2c84ac",
+            "name": "id",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5c6a5e8bef0dcf509e2c84ab",
+            "name": "state",
+            "example": "1",
+            "desc": "是：1  否：0"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/machineScience/listData",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "数据接口"
+        ],
+        "_id": 1803,
+        "method": "GET",
+        "catid": 413,
+        "title": "获取数据",
+        "path": "/machineScience/listData",
+        "project_id": 120,
+        "res_body_type": "json",
+        "req_body_form": [],
+        "req_params": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7799",
+            "name": "target",
+            "example": "安卓输入法",
+            "desc": "产品名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7798",
+            "name": "src",
+            "example": "新浪微博",
+            "desc": "来源"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7797",
+            "name": "createtimeStart",
+            "example": "",
+            "desc": "反馈时间开始值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7796",
+            "name": "createtimeEnd",
+            "example": "",
+            "desc": "反馈时间结束值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7795",
+            "name": "moduleName",
+            "example": "",
+            "desc": "模块名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7794",
+            "name": "problemName",
+            "example": "",
+            "desc": "现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7793",
+            "name": "childProblemName",
+            "example": "",
+            "desc": "子现象名"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7792",
+            "name": "bigClassify",
+            "example": "",
+            "desc": "大分类"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7791",
+            "name": "snatchtimeStart",
+            "example": "",
+            "desc": "抓取时间起始值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7790",
+            "name": "snatchtimeEnd",
+            "example": "",
+            "desc": "抓取时间结束值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c778f",
+            "name": "isNew",
+            "example": "",
+            "desc": "是否新增"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c778e",
+            "name": "version",
+            "example": "",
+            "desc": "版本"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c778d",
+            "name": "importTimeStart",
+            "example": "",
+            "desc": "数据导入时间起始值"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c778c",
+            "name": "importTimeEnd",
+            "example": "",
+            "desc": "数据导入时间结束值"
+          },
+          {
+            "required": "1",
+            "_id": "5c73e0482472951a945c778b",
+            "name": "pageNumber",
+            "example": "",
+            "desc": "页数"
+          },
+          {
+            "required": "1",
+            "_id": "5c73e0482472951a945c778a",
+            "name": "pageSize",
+            "example": "",
+            "desc": "每页条数"
+          },
+          {
+            "required": "0",
+            "_id": "5c73e0482472951a945c7789",
+            "name": "searchWord",
+            "example": "",
+            "desc": "搜索内容"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"integer\",\"minimum\":50,\"maximum\":200,\"exclusiveMinimum\":true,\"exclusiveMaximum\":true},\"rows\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"integer\"},\"url\":{\"type\":\"string\",\"enum\":[\"https://www.wdzj.com/news/hydongtai/3552704.html\",\"http://k.sina.com.cn/article_6583658806_1886aa93600100gwch.html?from=fashion\",\"http://t.cj.sina.com.cn/articles/view/6633842979/18b68692300100f3o0?from=tech\",\"http://cj.sina.com.cn/articles/view/5235388608/1380db0c001900er3a?from=finance\",\"http://t.cj.sina.com.cn/articles/view/1315591982/4e6a572e01900c6m7?from=tech\",\"http://cj.sina.com.cn/articles/view/6192937794/17120bb4202000pvvj?from=finance\",\"http://k.sina.com.cn/article_6776120747_193e365ab00100cpss.html?from=estate&subch=\",\"http://tech.sina.com.cn/csj/2018-12-12/doc-ihqackaa4365408.shtml\",\"http://mp.weixin.qq.com/s?src=11&timestamp=1544573702&ver=1283&signature=2SKmhH8jPi2olWARM-KLHec*J9wVKefh*sv0R*UfMIB10sClbGTliHBSas7Bs6By3qPjis5zZ9qf6pZm3uNT35yamp57y5Jo1*XHcGqgq-pe84rmeOv8u6ZIN2YF2CQy&new=1\",\"https://bbs.wdzj.com/thread-1226733-1-1.html\",\"http://cj.sina.com.cn/articles/view/1750070171/684ff39b02000f079?from=finance\",\"http://zj.sina.com.cn/news/m/2018-12-12/detail-ihmutuec8364701.shtml\",\"http://toutiao.com/group/6633717124130931203/\",\"https://bbs.wdzj.com/thread-1226730-1-1.html\",\"https://finance.sina.com.cn/roll/2018-12-12/doc-ihqackaa4249837.shtml\",\"http://cj.sina.com.cn/articles/view/1726918143/66eeadff02000jazn?from=finance\",\"https://tech.sina.com.cn/i/2018-12-12/doc-ihqackaa4135832.shtml\",\"http://k.sina.com.cn/article_6543683961_18608b17904800f74k.html?from=movie\",\"http://cj.sina.com.cn/articles/view/5073804843/12e6c1e2b00100d8i8?from=finance\",\"http://k.sina.com.cn/article_5594207950_14d70d6ce00100cppd.html?from=astro&subch=\",\"http://k.sina.com.cn/article_6429025311_17f33241f00100da8m.html?from=mood\",\"http://cj.sina.com.cn/articles/view/6543835119/1860affef04800do5u?from=finance\",\"https://bbs.wdzj.com/thread-1226728-1-1.html\",\"https://bbs.wdzj.com/thread-1226727-1-1.html\",\"http://k.sina.com.cn/article_6718684348_19076fcbc00100d57g.html?from=mood\",\"http://k.sina.com.cn/article_1647210043_622e6e3b01900efhq.html?from=news&subch=onews\",\"http://t.cj.sina.com.cn/articles/view/2131593523/7f0d893302000dyrt?from=tech\",\"http://toutiao.com/group/6633746489304678919/\",\"http://t.cj.sina.com.cn/articles/view/1708763410/65d9a91202000s6eq?from=tech\",\"http://k.sina.com.cn/article_6717872761_1906a9a7900100cozw.html?from=mood\",\"http://k.sina.com.cn/article_5383014125_140da46ed00100cv7c.html?from=auto&subch=uauto\",\"https://finance.sina.com.cn/roll/2018-12-11/doc-ihmutuec8307586.shtml\"],\"format\":\"url\"},\"title\":{\"type\":\"string\",\"enum\":[\"金融业降薪裁员众生相 这个冬天究竟有多冷？\",\"80后小姑忒会打扮，一天一套时髦套装+高跟鞋，气质优雅美\",\"微信收费新规，可能会影响到大家以后的使用\",\"借钱消费毁了年轻人？你可能已陷入误区\",\"消费的最高境界，是租赁和共享？ |CBNweekly\",\"陈志武：不用担心借钱消费会毁了年轻人\",\"“全款付清”与“按揭30年”哪个更值？很多人都不懂，吃了哑巴亏\",\"消费的岔路：一条M型回旋的河流\",\"直击医疗搜索痛点，搜狗搜索树立三甲主任权威标准，提高医生权威科普的可及性\",\"富仁金融攒多多蛇鼠一窝\",\"一大波“音遇”即将来袭，「ACRCloud」为唱歌社交 app 提供具备“哼唱识别”能力的SDK\",\"浙女子疯狂花钱美容520多万 系妈妈花钱推到女儿身上\",\"网贷用户：明知我没有工作，还给我秒下款，我怎么可能会还钱呢？\",\"今金贷分期已确认\",\"新版手机银行亮点服务\",\"为了没有存在感的存在\",\"360金融美股IPO在即 互金行业上市趋势再现\",\"台湾电影圈公认，不可能的任务！\",\"保护好征信，别再网贷了！\",\"巨蟹、摩羯、水瓶，十二星座运势（12.10~16）本周红榜\",\"发朋友圈霸气高冷的短句，让人忍不住收藏！\",\"为什么我们都爱看肌肉男？\",\"钱盆逾期\",\"大额借款平台介绍有没有\",\"哪一个瞬间让你觉得恋爱很累？网友：一伤心他就认为你是无理取闹\",\"贵阳一女子照片被P到花圈上、色情图片上……都因她做了这件事！\",\"科技股拉动美股反弹 中概股新股蘑菇街暴跌逾7%\",\"支付宝扫码领红包被薅羊毛，高端玩家赚了几十万\",\"电商创业新风口在哪里？看过这场大赛就知道了\",\"我就是自私了，你妈要再婚我不管，让我娘家出钱买婚房，这不可能\",\"找人借款20万，小伙月薪2万提奥迪R8，车友：你玩车还是车玩你\",\"881亿！多少忙着透支的年轻人还不起信用卡了？\",\"演艺圈并非没有清流，至少我们还有周润发！\"]},\"snatchTime\":{\"type\":\"string\",\"format\":\"datetime\"},\"createTime\":{\"type\":\"string\",\"format\":\"datetime\"},\"importTime\":{\"type\":\"string\",\"format\":\"datetime\"},\"target\":{\"type\":\"string\",\"enum\":[\"搜狗金融\",\"安卓输入法\",\"IOS输入法\"]},\"isCynthia\":{\"type\":\"string\",\"enum\":[0,1]},\"moduleName\":{\"type\":\"string\",\"enum\":[\"游戏键盘\",\"广告\",\"开挂模式\",\"键盘调起\",\"手写\",\"夜间模式\",\"笔画\",\"其他\",\"花漾字\",\"悬浮键盘\",\"英文键盘\",\"兼容性\",\"语音\",\"跨屏输入\",\"皮肤\",\"多语言键盘\",\"双拼\",\"性能\"]},\"problemName\":{\"type\":\"string\",\"enum\":[\"不希望有皮肤更新提示\",\"希望0键可以直接上屏\",\"希望增加花漾字类型\",\"希望卸载后保留斗图数据\",\"键盘显示白屏\",\"希望笔画支持繁体\",\"使用斗图崩溃\",\"希望可以禁用表情功能\",\"不会切换输入法\",\"找回账号或密码\",\"希望添加按键震动\",\"希望双拼模式可以展示对应的拼音\",\"希望可以关闭右下角的系统语音按钮\",\"安装卸载-其他\",\"花漾字好评\",\"不会使用上滑数字或符号\",\"无法调节按键音大小\",\"皮肤恢复默认\",\"希望自定义符号界面内容\",\"希望增加俄语键盘\",\"不会使用表情\",\"希望增加法语键盘\",\"无法切换输入法\",\"希望增加日语键盘\",\"无法使用快捷短语\",\"希望增加德语键盘\",\"不会使用智能回复\",\"无法使用语音输入\",\"皮肤制造机-其他\",\"不会换行\",\"其他\",\"键盘按键失效\",\"希望添加夜间皮肤\",\"快捷短语无法同步\",\"无法正常显示按键气泡\",\"符号显示异常\",\"不会使用通讯录词库\",\"希望能同步微信和QQ表情\",\"希望添加更多斗图表情\",\"无法使用皮肤\",\"词库好评\",\"斗图无法发送\",\"希望增加文字编辑功能\",\"不会修改皮肤候选字体颜色\",\"不会使用剪贴板\",\"斗图-其他\",\"不希望记忆用户词\",\"希望能自定义皮肤颜色\",\"不希望表情包下方显示搜狗输入法\",\"不喜欢按键音\",\"答题助手-其他\",\"英文大写锁定失效\",\"无法使用智能回复\",\"不会使用语音输入\"]},\"bigClassify\":{\"type\":\"string\",\"enum\":[\"问题类\",\"吐槽\",\"建议\",\"问题\",\"其他\",\"好评\",\"需求类\"]},\"childProblemName\":{\"type\":\"string\",\"enum\":[\"希望0键可以直接上屏\",\"希望增加花漾字类型\",\"希望卸载后保留斗图数据\",\"键盘显示白屏\",\"希望笔画支持繁体\",\"使用斗图崩溃\",\"希望可以禁用表情功能\",\"不会切换输入法\",\"找回账号或密码\",\"希望添加按键震动\",\"希望双拼模式可以展示对应的拼音\",\"希望可以关闭右下角的系统语音按钮\",\"安装卸载-其他\",\"花漾字好评\",\"不会使用上滑数字或符号\",\"无法调节按键音大小\",\"皮肤恢复默认\",\"希望自定义符号界面内容\",\"希望增加俄语键盘\",\"不会使用表情\",\"希望增加法语键盘\",\"无法切换输入法\",\"希望增加日语键盘\",\"无法使用快捷短语\",\"希望增加德语键盘\",\"不会使用智能回复\",\"无法使用语音输入\",\"皮肤制造机-其他\",\"不会换行\",\"其他\",\"键盘按键失效\",\"希望添加夜间皮肤\",\"快捷短语无法同步\",\"无法正常显示按键气泡\",\"符号显示异常\",\"不会使用通讯录词库\",\"希望能同步微信和QQ表情\",\"希望添加更多斗图表情\"]},\"isNew\":{\"type\":\"string\",\"enum\":[0,1]},\"content\":{\"type\":\"string\",\"enum\":[\"上，也还阔以。但是如果使用设备是手机等移动设备，这是就要慎重了。手机内存不像PC内存那样，手机内存很宝贵，稍有不慎，可能就会引发OOM问题。那当数据量比较多，又需要在手机端开发，怎么解决内存问题呢？\"]},\"src\":{\"type\":\"string\",\"enum\":[\"新浪科技\",\"新浪财经\",\"新流财经\"]},\"filter_by_person\":{\"type\":\"number\",\"enum\":[0,1]},\"emotionalAttribute\":{\"type\":\"string\",\"description\":\"情感属性\",\"enum\":[1,2,3]}},\"required\":[\"id\",\"url\",\"title\",\"snatchTime\",\"createTime\",\"target\",\"src\",\"emotionalAttribute\",\"filter_by_person\"]},\"minItems\":50,\"maxItems\":100}}}},\"required\":[\"msg\",\"code\",\"data\"]}",
+        "uid": 11,
+        "add_time": 1548402744,
+        "up_time": 1551097928,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/moduleAndProblem/getModuleByTarget",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "done",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 1862,
+        "method": "GET",
+        "catid": 413,
+        "title": "获取来源",
+        "path": "/moduleAndProblem/getModuleByTarget",
+        "project_id": 120,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 114,
+        "add_time": 1548830958,
+        "up_time": 1550478761,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5c516c4a131e7950990655b7",
+            "name": "target",
+            "example": "安卓输入法",
+            "desc": "产品名"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"enum\":[\"米柚论坛\",\"360助手应用评论\",\"应用汇应用评论\",\"应用内用户反馈\",\"新浪微博\",\"输入法问卷反馈\",\"七麦安卓市场监测\",\"百度贴吧\",\"Flyme社区\",\"ColorOS官方社区\",\"中兴应用商店\",\"Passport\",\"AppStore应用评论\"]},\"minItems\":5,\"maxItems\":10,\"uniqueItems\":true}},\"required\":[\"msg\",\"code\",\"data\"]}"
+      }
+    ]
+  }
+]
